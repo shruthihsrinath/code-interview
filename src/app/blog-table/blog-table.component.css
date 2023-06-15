@@ -1,0 +1,27 @@
+tr:hover{
+    background-color: bisque;  
+}
+
+table,td,th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    background: #0076c8;
+    color: white;
+}
+
+td, th{
+    padding: 12px;
+    text-align: left;
+    cursor: pointer;
+}
+
+tr:active {
+    background-color:burlywood;
+}
+
+

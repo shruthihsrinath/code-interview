@@ -1,0 +1,14 @@
+<table>
+    <thead>
+        <th> Blog Id </th>
+        <th> Title </th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of blogData" (click)="onClick(row)" [ngClass]="isClicked ? 'active' : 'inactive'">
+            <td>{{row.id}}</td>
+            <td>{{row.title}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<app-pagination [currentPage]="currentPage" [totalPages]="totalPages"></app-pagination>

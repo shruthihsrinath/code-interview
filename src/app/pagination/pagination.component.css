@@ -1,0 +1,12 @@
+.page-item {
+    display: inline-block;
+  }
+  
+  .page-link {
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+  }
+  
