@@ -14,14 +14,33 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Project Structure Information
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### blog-table
 
-## Running end-to-end tests
+Contains the main table with blog id and blog title. Each row in the table when clicked will then route to blog-details page.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### blog-detail
 
-## Further help
+Will display each blog in detail with Id, title and description
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Domain - folder
+
+contains the model of the blog data retrieved from the url provided.
+
+### Services - folder
+
+contains a service module to retrieve data from the url provided. with two methods
+`getPaginatedData` method to retrieve paginated data from backend.
+`getBlogData` method to get all the data.
+
+### Pagination - folder
+
+contains logic for pagination of the page
+
+### app-routing - module
+
+contains all the routes to the home page and blog-detail page.
+
+
+
